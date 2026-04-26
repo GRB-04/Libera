@@ -13,6 +13,8 @@ A marca **Libera** nasceu do conceito de "destrancar" oportunidades.
 
 <img width="910" height="1280" alt="WhatsApp Image 2026-04-22 at 22 59 45" src="https://github.com/user-attachments/assets/083ba61b-5755-4ed7-a114-b17e8b7fa327" />
 
+
+
 <img width="1080" height="316" alt="image" src="https://github.com/user-attachments/assets/c1ce834f-29eb-4108-976d-37415000335c" />
 
 ---
