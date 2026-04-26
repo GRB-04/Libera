@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Libera Design System — pure black + neon yellow accent.
+   All color tokens are HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand core */
+    --background: 0 0% 0%;             /* #000000 */
+    --foreground: 0 0% 98%;            /* #FAFAFA */
+
+    --surface: 0 0% 2%;                /* #050505 */
+    --surface-elevated: 0 0% 4%;       /* #0A0A0A */
+    --surface-2: 0 0% 7%;              /* #111111 */
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 65 98% 50%;             /* #EBFD02 neon yellow */
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 65 100% 60%;
+
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 65 98% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14%;
+    --input: 0 0% 9%;
+    --ring: 65 98% 50%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-radial-glow: radial-gradient(ellipse at 50% 0%, hsl(65 98% 50% / 0.18), transparent 55%);
+    --gradient-yellow: linear-gradient(135deg, hsl(65 98% 50%), hsl(65 100% 65%));
+    --gradient-fade-bottom: linear-gradient(180deg, transparent, hsl(0 0% 0%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 2%));
+
+    /* Shadows / glow */
+    --glow-yellow: 0 0 60px hsl(65 98% 50% / 0.45), 0 0 140px hsl(65 98% 50% / 0.18);
+    --glow-soft: 0 20px 60px -20px hsl(65 98% 50% / 0.4);
+
+    /* Motion */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: all 0.5s var(--ease-out-expo);
+
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 65 98% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 14%;
+    --sidebar-ring: 65 98% 50%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  ::selection { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+}
+
+@layer utilities {
+  .font-display { font-family: 'Space Grotesk', sans-serif; }
+  .text-balance { text-wrap: balance; }
+  .glow-yellow { box-shadow: var(--glow-yellow); }
+
+  .text-gradient-yellow {
+    background: var(--gradient-yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-radial-glow { background-image: var(--gradient-radial-glow); }
+  .bg-card-soft { background-image: var(--gradient-card); }
+
+  /* Subtle dot grid for fintech surfaces */
+  .bg-dot-grid {
+    background-image: radial-gradient(hsl(0 0% 100% / 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Hairline grid */
+  .bg-fine-grid {
+    background-image:
+      linear-gradient(hsl(0 0% 100% / 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 100% / 0.035) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  /* Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 40s linear infinite; }
+
+  /* Float */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float { animation: float 6s ease-in-out infinite; }
+
+  /* Pulse glow */
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+  .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+  /* Wave draw */
+  @keyframes draw {
+    from { stroke-dashoffset: 1000; }
+    to { stroke-dashoffset: 0; }
+  }
+  .animate-draw {
+    stroke-dasharray: 1000;
+    animation: draw 3s var(--ease-out-expo) forwards;
+  }
+
+  /* Fade in up */
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fade-up 0.8s var(--ease-out-expo) forwards; }
+
+  /* Spin slow */
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+  .animate-spin-slow { animation: spin-slow 12s linear infinite; }
+
+  /* Progress shimmer */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .animate-shimmer { animation: shimmer 2s linear infinite; }
+
+  /* Scan line */
+  @keyframes scan-line {
+    0% { top: 0%; }
+    100% { top: 100%; }
+  }
+  .animate-scan-line { animation: scan-line 2s linear infinite; }
+}

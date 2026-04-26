@@ -1,0 +1,65 @@
+project_id = "Libera"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+health_timeout = "2m"
+major_version = 17
+
+[realtime]
+enabled = true
+
+[studio]
+enabled = true
+port = 54323
+api_url = "http://127.0.0.1"
+
+[inbucket]
+enabled = true
+port = 54324
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:3000"
+additional_redirect_urls = ["https://127.0.0.1:3000"]
+jwt_expiry = 3600
+enable_signup = true
+enable_anonymous_sign_ins = false
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
+inspector_port = 8083
+deno_version = 2
+
+[analytics]
+enabled = true
+port = 54327
+backend = "postgres"
+
+# =========================
+# 🔥 FUNCTIONS (CORRIGIDO)
+# =========================
+
+[functions.create-connect-token]
+enabled = true
+verify_jwt = false
+import_map = "./functions/create-connect-token/deno.json"
+entrypoint = "./functions/create-connect-token/index.ts"
+
+[functions.get-financial-data]
+enabled = true
+verify_jwt = false
+import_map = "./functions/get-financial-data/deno.json"
+entrypoint = "./functions/get-financial-data/index.ts"
