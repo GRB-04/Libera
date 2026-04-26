@@ -1,3 +1,6 @@
+<img width="837" height="399" alt="libera-logo" src="https://github.com/user-attachments/assets/cc572ba6-5f91-4cb1-8fab-e73599177a91" />
+
+
 # Libera • Crédito Sem Burocracia
 
 > **Projeto Final - Hackathon Semana Ubíqua**  
@@ -9,13 +12,7 @@
 
 A marca **Libera** nasceu do conceito de "destrancar" oportunidades. 
 
-### O Conceito da Logo
-Nossa logo é uma evolução minimalista de um cadeado:
-- **Cadeado Fechado → Aberto → Acesso Liberado**: Representa a jornada do autônomo que antes era excluído e agora tem acesso ao crédito.
-- **Formato em 'L' e 'i'**: Alusão ao nome Libera e à inteligência (i) do nosso motor de score.
-- **Curva em 'S'**: Representa o fluxo financeiro inteligente.
-- **Base em 'U'**: Uma base sólida e segura para o crescimento do usuário.
-- **O Ponto**: Simboliza a evolução constante e o progresso do score.
+<img width="1080" height="316" alt="image" src="https://github.com/user-attachments/assets/c1ce834f-29eb-4108-976d-37415000335c" />
 
 ---
 
