@@ -1,4 +1,4 @@
-<img width="837" height="194" alt="image" src="https://github.com/user-attachments/assets/8a27cf83-4483-4e51-938e-9751b5c7e3dd" />
+<img width="837" height="189" alt="libera-logo1" src="https://github.com/user-attachments/assets/ec2c1843-0c47-4fc4-8feb-1704226ffc65" />
 
 # Libera • Crédito Sem Burocracia
 
