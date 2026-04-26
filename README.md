@@ -1,5 +1,4 @@
-<img width="837" height="399" alt="libera-logo" src="https://github.com/user-attachments/assets/cc572ba6-5f91-4cb1-8fab-e73599177a91" />
-
+<img width="837" height="194" alt="image" src="https://github.com/user-attachments/assets/8a27cf83-4483-4e51-938e-9751b5c7e3dd" />
 
 # Libera • Crédito Sem Burocracia
 
@@ -33,33 +32,33 @@ Nesta seção, detalhamos como o sistema opera de ponta a ponta.
 ### A. Conexão de Dados (Onboarding)
 O usuário conecta sua conta bancária via Pluggy. É aqui que o consentimento é dado.
 - **Botão "Conectar Banco"**: Inicia o fluxo seguro de compartilhamento.
-`[PRINT: Tela de Conexão com lista de bancos]`
+<img width="1920" height="869" alt="image" src="https://github.com/user-attachments/assets/772c05e7-b924-4e50-a9de-f736d231f3c1" />
 
 ### B. Análise em Tempo Real
 Nosso motor processa até 500 transações em segundos.
-`[PRINT: Tela de "Analisando seus dados" com barra de progresso]`
+<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/aa74d697-83a9-4237-9128-3fc91c3a3448" />
 
 ### C. Resultado e Transparência (Legal Compliance)
 Damos o score e explicamos o **porquê**.
 - **Insights**: "Sua renda é consistente", "Seu comprometimento é alto". Isso cumpre a exigência jurídica de explicabilidade.
-`[PRINT: Tela de Resultado com Score e Insights]`
+<img width="1920" height="875" alt="image" src="https://github.com/user-attachments/assets/c12ef3f2-893a-4bf4-8e67-949b8add6b93" />
 
 ### D. Simulação e Contratação
 O usuário escolhe o valor (dentro do limite aprovado) e as parcelas.
 - **Slider de Valor**: Ajuste fino do quanto precisa.
-`[PRINT: Tela de Simulação com Sliders]`
+<img width="1920" height="874" alt="image" src="https://github.com/user-attachments/assets/4a777219-1684-485e-9c0c-da806101a057" />
 
 ### E. Painel de Controle (Dashboard)
 Gestão total do crédito e saldo devedor.
 - **Saldo Devedor**: Visão clara do quanto falta pagar.
 - **Progresso de Parcelas**: Ex: "1 de 6".
-`[PRINT: Dashboard principal com Score e Próximo Vencimento]`
+<img width="1920" height="879" alt="image" src="https://github.com/user-attachments/assets/27c2ccb6-4d06-46f5-b5b9-3de588ed469d" />
 
 ### F. Pagamento Real-time (Scan & Pay)
 Sincronização entre dispositivos via Supabase Realtime.
 - **Botão "Pagar via Pix"**: Gera o QR Code e o link "Copia e Cola".
 - **Confirmação no Celular**: Atualiza o dashboard no computador instantaneamente.
-`[PRINT: Tela de Pagamento Pix com QR Code]`
+<img width="1920" height="874" alt="image" src="https://github.com/user-attachments/assets/91f89478-8afd-44ef-bb9c-c91e46db6c53" />
 
 ---
 
