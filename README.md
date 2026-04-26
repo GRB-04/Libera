@@ -30,8 +30,7 @@ O Libera utiliza o **Open Finance** para transformar transações brutas em um *
 Nesta seção, detalhamos como o sistema opera de ponta a ponta.
 
 ### A. Conexão de Dados (Onboarding)
-O usuário conecta sua conta bancária via Pluggy. É aqui que o consentimento é dado.
-- **Botão "Conectar Banco"**: Inicia o fluxo seguro de compartilhamento.
+O usuário acessa o ambiente de compartilhamento através da instituição **"MeuPluggy"**. Dentro deste portal, ele seleciona e conecta sua conta bancária de forma segura. É aqui que o consentimento do Open Finance é formalizado.
 <img width="1920" height="869" alt="image" src="https://github.com/user-attachments/assets/772c05e7-b924-4e50-a9de-f736d231f3c1" />
 
 ### B. Análise em Tempo Real
